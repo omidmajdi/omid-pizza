@@ -10,6 +10,9 @@ module.exports = {
   },
   darkMode: 'media',
   theme: {
+    fontFamily: {
+      'sans': ['Graphik', 'ui-sans-serif', 'system-ui'],
+    },
     extend: {},
   },
   variants: {
