@@ -1,13 +1,16 @@
 <!doctype html>
 <html>
   <head>
-    <title><%= current_page.data.title || "Omid Majdi" %></title>
+    <title><%= current_page.data.title || "Omid.Pizza" %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta property="og:image" content="/images/omid.jpg" />
     <meta property="og:description" content="<%= current_page.data.ogdescription || ""%>">
     <%= stylesheet_link_tag "tailwind" %>
+    <% if development? %>
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <% end %>
     <%= javascript_include_tag "site" %>
   </head>
   
