@@ -8,9 +8,10 @@
     <meta property="og:image" content="/images/omid.jpg" />
     <meta property="og:description" content="<%= current_page.data.ogdescription || ""%>">
     <meta name="description" content="<%= current_page.data.ogdescription || ""%>">
-    <%= stylesheet_link_tag "tailwind" %>
-    <% if development? %>
-      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <% if development?  %>
+      <%= stylesheet_link_tag "tailwind-full" %>
+    <% else %>   
+      <%= stylesheet_link_tag "tailwind" %>
     <% end %>
     <%= javascript_include_tag "site" %>
   </head>
