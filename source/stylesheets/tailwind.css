@@ -704,6 +704,10 @@ video {
   margin-bottom: 0px;
 }
 
+.mb-36 {
+  margin-bottom: 9rem;
+}
+
 .max-h-32 {
   max-height: 8rem;
 }
